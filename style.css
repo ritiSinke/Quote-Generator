@@ -1,45 +1,51 @@
-body{
-    display:flex;
+body {
+    display: flex;
     flex-direction: column;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     background-image: url('lights.png');
     font-family: cursive;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     min-height: 100vh;
-    gap: 30px ;
+    gap: 30px;
 }
 
-.container{
+.container {
     text-align: center;
-    width:50%;
+    width: 50%;
 }
+
 /* to change the themes  */
-.theme-container{
-    position: absolute ;
+.theme-container {
+    position: absolute;
     top: 5%;
     right: 5%;
-    display:flex;
+    display: flex;
     justify-content: center;
 
 }
-.theme-slider{
-    position: relative ;
+
+.theme-slider {
+    position: relative;
     display: inline-block;
     width: 60px;
-    height : 34px ;
+    height: 34px;
 }
 
-.theme-slider input{
+.theme-slider input {
     display: none;
 }
 
-.slider{
+.font{
+    color: black;
+    font-size: 1.5rem;
+}
+.slider {
     position: absolute;
-    cursor: pointer; 
+    cursor: pointer;
     top: 0;
     right: 0;
     left: 0;
@@ -47,22 +53,19 @@ body{
     background-color: #141414;
     transition: .4s;
 }
-#slider{
-    background-color: #87d9e4;
 
-}
-.slider:before{
-    background-color: #b9a6a4;
+.slider:before {
+    background-color: #f1eeee;
     bottom: 4px;
     content: "";
-    height:26px;
-    left:4px;
+    height: 26px;
+    left: 4px;
     position: absolute;
     transition: .4s;
-    width: 26px;  
+    width: 26px;
 }
 
-input:checked+.slider{
+input:checked+.slider {
     background-color: #c68f8f;
 }
 
@@ -70,87 +73,148 @@ input:checked+.slider:before {
     transform: translateX(26px);
 }
 
-.slider.round{
+.slider.round {
     border-radius: 30px;
 }
 
-.slider.round:before{
-    border-radius:50%;
+.slider.round:before {
+    border-radius: 50%;
 }
 
 
-h1{
+h1 {
     text-align: center;
     font-family: cursive;
     font-size: 3rem;
 }
 
 
-.both{
-    text-align:center;
-    width:50%
+.containers {
+    text-align: center;
+    width: 50%
 }
 
-.quote-container{
-    width:100%;
-    height:50%;
+.quote-container {
+    width: 100%;
+    height: 50%;
     padding: 40px 10px;
     border-radius: 15px;
-    background-color:#c68f8f;
+    background-color: #c68f8f;
     box-shadow: 0 5px 5px 5px rgba(216, 205, 205, 0.2);
-    overflow:hidden;
-    position:relative;
+    overflow: hidden;
+    position: relative;
 }
 
-.quote-text{
+.quote-text {
     font-size: 2rem;
 }
 
-.quote-author{
+.quote-author {
     font-size: 2rem;
     font-weight: 600;
     font-style: italic;
 }
 
 
-.button-container{
-    display:flex;
-    justify-content:center;
+.button-container {
+    display: flex;
+    justify-content: center;
     margin-top: 40px;
-    gap: 10px;
+    gap: 40px;
 }
 
-button{
-    cursor:pointer;
+button {
+    cursor: pointer;
     font-size: 1.5rem;
     height: 2.5rem;
-    border:none;
-    border-radius:10px;
+    border: none;
+    border-radius: 10px;
     background-color: #c68f8f;
     padding: 0.5rem 1rem;
 }
 
-button:hover{
-    filter: brightness(120%)
+button:hover {
+    filter: brightness(110%);
+    transform: scale(1.05);
 }
-button:active{
+
+button:active {
     transform: translateY(2px);
 }
 
 
-.dropdown{
+.dropdown {
     justify-content: space-between;
     display: block;
 }
 
-.category{
-    width:150px;
+.category {
+    width: 150px;
     padding: 10px;
     font-size: 20px;
-    border: 5px ;
+    border: 5px;
     border-radius: 6px;
     background-color: #c68f8f;
     cursor: pointer;
     font-family: sans-serif;
 }
 
+
+.darkmode {
+    background-image: url('darkkk.jpg');
+    background-position: unset;
+
+    h1 {
+        color: whitesmoke;
+    }
+
+    .font{
+        color:whitesmoke;
+    }
+    .quote-text{
+        color:whitesmoke;
+    }
+
+    .quote-container{
+        background-color: #786464;
+    }
+
+    .quote-author {
+        color: whitesmoke;
+    }
+
+    button{
+        background-color: #786464;
+        color: whitesmoke;
+    }
+
+    .category{
+        background-color: #786464;
+        color: whitesmoke;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    .containers{
+        width: 90%;
+    }
+
+    .quote-container{
+        width: 90%;
+        padding : 10px;
+    }
+
+    .quote-text{
+        font-size: 1.5rem;
+
+    }
+    
+    .quote-author{
+        font-size: 1.5rem;
+    }
+
+    .button-container{
+        gap :15px;
+    }
+}
