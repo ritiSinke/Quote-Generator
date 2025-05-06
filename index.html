@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quote Generator</title>
+</head>
+
+<body>
+
+    <div class="theme-container">
+        <label class="theme-slider" for="checkbox">
+            <input type="checkbox" id="checkbox">
+            <span class="round slider"> </span>
+        </label>
+    </div>
+
+    <h1> Quotes </h1>
+
+    <div class="container">
+        <div class="font">
+            <span> - </span>
+            <input type="range" min="10" max="40" steps="1" id ="slider">
+            <span> + </span>
+        </div>
+    </div>
+
+    <div class="both">
+        <div class="quote-container"> 
+            <div class="quote-text">
+            <!-- <i class="fas fa-quote-left"> </i> -->
+            <span id="quote"> Your quote will appear here ..</span>
+        </div>
+    </div>
+
+        <div class="quote-author">
+            <span id="author"> Author's name </span>
+        </div>
+        </div>
+
+        <div class="button-container">
+            <button id="previous"> Previous </button>
+            <button id="random""> Random </button>
+            <button id=" next"> Next </button>
+        </div>
+
+        <div class="dropdown">
+            <p  Select Category </p>
+            <select id="category" class="category">
+                <option value="science"> Science </option>
+                <option value="fun"> Fun </option>
+                <option value="Inspiration"> Inspiration </option>
+            </select>
+        </div>
+
+<script src="script.js"> </script>
+
+</body>
+
+</html>
