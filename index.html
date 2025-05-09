@@ -28,34 +28,34 @@
     </div>
 
     <div class="containers">
-        <div class="quote-container"> 
+        <div class="quote-container">
             <div class="quote-text">
-            <!-- <i class="fas fa-quote-left"> </i> -->
-            <span id="quote"> Quotess</span>
+                <!-- <i class="fas fa-quote-left"> </i> -->
+                <span id="quote"> Quotess</span>
+            </div>
         </div>
-    </div>
 
         <div class="quote-author">
             <span id="author"> Author's name </span>
         </div>
-        </div>
+    </div>
 
-        <div class="button-container">
-            <button id="previous"> Previous </button>
-            <button id="random""> Random </button>
-            <button id=" next"> Next </button>
-        </div>
+    <div class="button-container">
+        <button id="previous" onclick="previousQuote()"> Previous </button>
+        <button id="random" onclick="randomQuote()"> Random </button>
+        <button id=" next" onclick="nextQuote()"> Next </button>
+    </div>
 
-        <div class="dropdown">
-            <p  Select Category </p>
-            <select id="category" class="category">
-                <option value="science"> Science </option>
-                <option value="fun"> Fun </option>
-                <option value="Inspiration"> Inspiration </option>
-            </select>
-        </div>
+    <div class="dropdown">
+        <p class="selection">  Select Category </p>
+        <select id="category" class="category" onchange="changeQuote()">
+            <option value="fun"> Fun </option>
+            <option value="science"> Science </option>
+            <option value="inspiration"> Inspiration </option>
+        </select>
+    </div>
 
-<script src="script.js"> </script>
+    <script src="script.js"> </script>
 
 </body>
 

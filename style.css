@@ -10,7 +10,7 @@ body {
     background-size: cover;
     background-position: center;
     min-height: 100vh;
-    gap: 30px;
+    gap: 15px;
 }
 
 .container {
@@ -190,6 +190,9 @@ button:active {
 
     .category{
         background-color: #786464;
+        color: whitesmoke;
+    }
+    .selection{
         color: whitesmoke;
     }
 }
