@@ -199,12 +199,12 @@ button:active {
 }
 
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
 
     body{
-        gap: 11px;
+        gap: 12px;
     }
-    
+
     .containers{
         width: 90%;
     }
