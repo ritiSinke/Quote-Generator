@@ -164,6 +164,7 @@ button:active {
     background-image: url('darkkk.jpg');
     background-position: unset;
 
+   
     h1 {
         color: whitesmoke;
     }
@@ -199,6 +200,11 @@ button:active {
 
 
 @media screen and (max-width: 700px){
+
+    body{
+        gap: 11px;
+    }
+    
     .containers{
         width: 90%;
     }
